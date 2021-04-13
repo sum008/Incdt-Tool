@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar sources/webapp-runner.jar --port $PORT com.incident.management.register.resources
+web: java $JAVA_OPTS -jar sources/webapp-runner.jar --port $PORT com.incident.management.register.resources.RegisterResources
