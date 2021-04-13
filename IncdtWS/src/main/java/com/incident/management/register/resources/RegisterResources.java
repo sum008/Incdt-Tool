@@ -8,12 +8,10 @@ import com.incident.management.incident.create.CreateIncidentClient;
 import com.incident.management.incident.view.list.ViewIncidentListClient;
 import com.incident.management.incident.view.single.ViewSingleIncidentClient;
 import com.incident.management.logging.LogClass;
-import jakarta.inject.Singleton;
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
 
 @ApplicationPath("/*")
-@Singleton
 public class RegisterResources extends Application {
 	
 	@Override
