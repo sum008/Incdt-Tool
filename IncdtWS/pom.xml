@@ -131,7 +131,7 @@
                     <phase>package</phase>
                     <goals><goal>copy</goal></goals>
                     <configuration>
-                    <outputDirectory>${endorsed.dir}</outputDirectory>
+                    <outputDirectory>target</outputDirectory>
                         <artifactItems>
                             <artifactItem>
                                 <groupId>com.heroku</groupId>
