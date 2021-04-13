@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/webapp-runner.jar --port $PORT target/*.war    
+web: java -Xmx300m -Xss512k -XX:CICompilerCount=2 -jar target/webapp-runner.jar --port $PORT target/*.war    
