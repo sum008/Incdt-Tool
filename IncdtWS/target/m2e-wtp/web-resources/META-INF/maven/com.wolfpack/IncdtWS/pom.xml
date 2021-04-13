@@ -131,7 +131,7 @@
                     <phase>package</phase>
                     <goals><goal>copy</goal></goals>
                     <configuration>
-                    <outputDirectory>target</outputDirectory>
+                    <outputDirectory>sources</outputDirectory>
                         <artifactItems>
                             <artifactItem>
                                 <groupId>com.heroku</groupId>
