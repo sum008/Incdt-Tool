@@ -73,11 +73,19 @@
 
 		
 		<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-runner -->
-		<dependency>
+		<!-- <dependency>
 		    <groupId>org.eclipse.jetty</groupId>
 		    <artifactId>jetty-runner</artifactId>
 		    <version>9.4.9.v20180320</version>
+		</dependency> -->
+		
+		<!-- https://mvnrepository.com/artifact/com.heroku/webapp-runner -->
+		<dependency>
+		    <groupId>com.heroku</groupId>
+		    <artifactId>webapp-runner</artifactId>
+		    <version>9.0.41.0</version>
 		</dependency>
+		
 
   </dependencies>
 
@@ -115,7 +123,7 @@
           <version>2.8.2</version>
         </plugin>
         
-        <!-- <plugin>
+        <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
             <executions>
@@ -128,15 +136,15 @@
                                 <groupId>com.heroku</groupId>
                                 <artifactId>webapp-runner</artifactId>
                                 <version>9.0.41.0</version>
-                                <destFileName>webapp-runner.jar</destFileName>
+                                <destFileName>target/webapp-runner.jar</destFileName>
                             </artifactItem>
                         </artifactItems>
                     </configuration>
                 </execution>
             </executions>
-        </plugin> -->
+        </plugin>
         
-        <plugin>
+        <!-- <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-dependency-plugin</artifactId>
       <version>2.4</version>
@@ -150,13 +158,13 @@
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-runner</artifactId>
                 <version>9.4.9.v20180320</version>
-                <destFileName>jetty-runner.jar</destFileName>
+                <destFileName>/IncdtWS/target/jetty-runner.jar</destFileName>
               </artifactItem>
             </artifactItems>
           </configuration>
         </execution>
        </executions>
-    </plugin>
+    </plugin> -->
         
       </plugins>
     </pluginManagement>
