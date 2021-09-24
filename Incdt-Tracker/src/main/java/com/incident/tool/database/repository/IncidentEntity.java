@@ -6,27 +6,37 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "incident_record")
+@Table(name = "incident_record1")
 public class IncidentEntity {
 
+	@Column(name = "empid", nullable = false)
 	private String empId;
+	@Column(name = "empname", nullable = false)
 	private String empName;
-	private String title; 	
+	@Column(name = "title", nullable = false)
+	private String title; 
+	@Column(name = "description")
 	private String description;
+	@Column(name = "assignedTo")
 	private String assignedTo;
+	@Column(name = "severity", nullable = false)
 	private String severity;
 	
 	@Id
+	@Column(name = "incidentNumber", nullable = false)
 	private String incidentNumber;
+	@Column(name = "dateCreated", nullable = false)
 	private String dateCreated;
+	@Column(name = "dateClosed")
 	private String dateClosed;
+	@Column(name = "closingNotes")
 	private String closingNotes;
 	
 	public IncidentEntity() {
-		/* will be required by spring to create its instance with zero parameter */
+		/* will be required by spring to create its instance */
 	}
 	
-	@Column(name = "empid", nullable = false)
+	
 	public String getEmpId() {
 		return empId;
 	}
@@ -34,7 +44,6 @@ public class IncidentEntity {
 		this.empId = empId;
 	}
 	
-	@Column(name = "empname", nullable = false)
 	public String getEmpName() {
 		return empName;
 	}
@@ -42,7 +51,6 @@ public class IncidentEntity {
 		this.empName = empName;
 	}
 	
-	@Column(name = "title", nullable = false)
 	public String getTitle() {
 		return title;
 	}
@@ -50,7 +58,6 @@ public class IncidentEntity {
 		this.title = title;
 	}
 	
-	@Column(name = "description")
 	public String getDescription() {
 		return description;
 	}
@@ -58,7 +65,6 @@ public class IncidentEntity {
 		this.description = description;
 	}
 	
-	@Column(name = "assignedTo")
 	public String getAssignedTo() {
 		return assignedTo;
 	}
@@ -66,7 +72,6 @@ public class IncidentEntity {
 		this.assignedTo = assignedTo;
 	}
 	
-	@Column(name = "severity", nullable = false)
 	public String getSeverity() {
 		return severity;
 	}
@@ -74,7 +79,6 @@ public class IncidentEntity {
 		this.severity = severity;
 	}
 	
-	@Column(name = "incidentNumber", nullable = false)
 	public String getIncidentNumber() {
 		return incidentNumber;
 	}
@@ -82,7 +86,6 @@ public class IncidentEntity {
 		this.incidentNumber = incidentNumber;
 	}
 	
-	@Column(name = "dateCreated", nullable = false)
 	public String getDateCreated() {
 		return dateCreated;
 	}
@@ -90,7 +93,6 @@ public class IncidentEntity {
 		this.dateCreated = dateCreated;
 	}
 	
-	@Column(name = "dateClosed")
 	public String getDateClosed() {
 		return dateClosed;
 	}
@@ -98,7 +100,6 @@ public class IncidentEntity {
 		this.dateClosed = dateClosed;
 	}
 	
-	@Column(name = "closingNotes")
 	public String getClosingNotes() {
 		return closingNotes;
 	}
